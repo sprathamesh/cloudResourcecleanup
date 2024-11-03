@@ -24,3 +24,26 @@ To interact with various cloud providers, the following Python packages are requ
 1. Clone the repository:
    ```bash
    git clone https://github.com/sprathamesh/cloudResourcecleanup.git
+   cd cloud-resource-cleanup
+   pip install -r requirements.txt
+
+2. Set the other environment variables:
+   ```bash
+   export AWS_SECRET_ACCESS_KEY="your_secret_key"
+   export AWS_ACCESS_KEY_ID="your_access_key"
+   export AZURE_CREDENTIALS_TENANT_ID="your_tenant_id"
+   export AZURE_CREDENTIALS_SUBSCRIPTION_ID="your_subscription_id"
+   export AZURE_CREDENTIALS_CLIENT_SECRET="your_client_secret"
+   export AZURE_CREDENTIALS_CLIENT_ID="your_client_id"
+   export AZURE_RESOURCE_GROUP="your_resource_group"
+   export SLACK_BOT_TOKEN="your_slack_bot_token"
+   export INFLUXDB_TOKEN="your_influxdb_token"
+
+### Script to Run:
+1.To delete all running AWS VMs that are older than 3 days and 12 hours.
+   ```bash
+   python crc.py --cloud aws --resource vm  --age "{'days': 3, 'hours': 12}"
+
+
+
+
