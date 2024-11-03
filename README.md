@@ -40,7 +40,11 @@ To interact with various cloud providers, the following Python packages are requ
    export INFLUXDB_TOKEN="your_influxdb_token"
 
 ### Script to Run:
-1.To delete all running AWS VMs that are older than 3 days and 12 hours.
+1.To perform a dry run of the script and list all VMs across all clouds that have been created in the last 2 days
+   ``bash
+   python crc.py --cloud all --resource vm --age "{'days': 2}" --dry_run
+   
+2.To delete all running AWS VMs that are older than 3 days and 12 hours.
    ```bash
    python crc.py --cloud aws --resource vm  --age "{'days': 3, 'hours': 12}"
 
