@@ -1,0 +1,137 @@
+2023-12-03 20:14:36,991 utils.py:41 INFO MainThread Logging initialized with file: logs\crc.log and level: DEBUG
+2023-12-03 20:14:37,049 _universal.py:537 INFO MainThread Request URL: 'https://login.microsoftonline.com:443/e5953a31-070b-464b-85b4-5bee974b5ede/v2.0/.well-known/openid-configuration'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.12.0 Python/3.8.2 (Windows-10-10.0.22621-SP0)'
+No body was attached to the request
+2023-12-03 20:14:37,054 connectionpool.py:1003 DEBUG MainThread Starting new HTTPS connection (1): login.microsoftonline.com:443
+2023-12-03 20:14:37,269 connectionpool.py:456 DEBUG MainThread https://login.microsoftonline.com:443 "GET /e5953a31-070b-464b-85b4-5bee974b5ede/v2.0/.well-known/openid-configuration HTTP/1.1" 200 1753
+2023-12-03 20:14:37,271 _universal.py:575 INFO MainThread Response status: 200
+Response headers:
+    'Cache-Control': 'max-age=86400, private'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Access-Control-Allow-Methods': 'REDACTED'
+    'P3P': 'REDACTED'
+    'x-ms-request-id': 'a75cfa5e-e772-43ba-ba7c-d36198120a00'
+    'x-ms-ests-server': 'REDACTED'
+    'X-XSS-Protection': 'REDACTED'
+    'Set-Cookie': 'REDACTED'
+    'Date': 'Sun, 03 Dec 2023 14:44:38 GMT'
+    'Content-Length': '1753'
+2023-12-03 20:14:37,274 authority.py:130 DEBUG MainThread openid_config = {'token_endpoint': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/token', 'token_endpoint_auth_methods_supported': ['client_secret_post', 'private_key_jwt', 'client_secret_basic'], 'jwks_uri': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/discovery/v2.0/keys', 'response_modes_supported': ['query', 'fragment', 'form_post'], 'subject_types_supported': ['pairwise'], 'id_token_signing_alg_values_supported': ['RS256'], 'response_types_supported': ['code', 'id_token', 'code id_token', 'id_token token'], 'scopes_supported': ['openid', 'profile', 'email', 'offline_access'], 'issuer': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/v2.0', 'request_uri_parameter_supported': False, 'userinfo_endpoint': 'https://graph.microsoft.com/oidc/userinfo', 'authorization_endpoint': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/authorize', 'device_authorization_endpoint': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/devicecode', 'http_logout_supported': True, 'frontchannel_logout_supported': True, 'end_session_endpoint': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/logout', 'claims_supported': ['sub', 'iss', 'cloud_instance_name', 'cloud_instance_host_name', 'cloud_graph_host_name', 'msgraph_host', 'aud', 'exp', 'iat', 'auth_time', 'acr', 'nonce', 'preferred_username', 'name', 'tid', 'ver', 'at_hash', 'c_hash', 'email'], 'kerberos_endpoint': 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/kerberos', 'tenant_region_scope': 'AS', 'cloud_instance_name': 'microsoftonline.com', 'cloud_graph_host_name': 'graph.windows.net', 'msgraph_host': 'graph.microsoft.com', 'rbac_url': 'https://pas.windows.net'}
+2023-12-03 20:14:37,274 application.py:567 DEBUG MainThread Broker enabled? False
+2023-12-03 20:14:37,275 application.py:614 DEBUG MainThread Region to be used: None
+2023-12-03 20:14:37,275 application.py:1461 DEBUG MainThread Found 0 RTs matching {'environment': 'login.microsoftonline.com', 'home_account_id': None, 'family_id': '1'}
+2023-12-03 20:14:37,275 application.py:1461 DEBUG MainThread Found 0 RTs matching {'environment': 'login.microsoftonline.com', 'home_account_id': None, 'client_id': '53576ce9-8e12-419f-a816-694c986f73e2'}
+2023-12-03 20:14:37,276 _universal.py:537 INFO MainThread Request URL: 'https://login.microsoftonline.com/common/discovery/instance?api-version=REDACTED&authorization_endpoint=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-identity/1.12.0 Python/3.8.2 (Windows-10-10.0.22621-SP0)'
+No body was attached to the request
+2023-12-03 20:14:37,404 connectionpool.py:456 DEBUG MainThread https://login.microsoftonline.com:443 "GET /common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/authorize HTTP/1.1" 200 945
+2023-12-03 20:14:37,405 _universal.py:575 INFO MainThread Response status: 200
+Response headers:
+    'Cache-Control': 'max-age=86400, private'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Access-Control-Allow-Methods': 'REDACTED'
+    'P3P': 'REDACTED'
+    'x-ms-request-id': '824fad13-f2cb-4c70-8b02-8141d6261e00'
+    'x-ms-ests-server': 'REDACTED'
+    'X-XSS-Protection': 'REDACTED'
+    'Set-Cookie': 'REDACTED'
+    'Date': 'Sun, 03 Dec 2023 14:44:38 GMT'
+    'Content-Length': '945'
+2023-12-03 20:14:37,406 telemetry.py:37 DEBUG MainThread Generate or reuse correlation_id: 98c233f4-64e7-4962-b7f5-dbabec7ebe89
+2023-12-03 20:14:37,406 _universal.py:534 INFO MainThread Request URL: 'https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/token'
+Request method: 'POST'
+Request headers:
+    'Accept': 'application/json'
+    'x-client-sku': 'REDACTED'
+    'x-client-ver': 'REDACTED'
+    'x-client-os': 'REDACTED'
+    'x-client-cpu': 'REDACTED'
+    'x-ms-lib-capability': 'REDACTED'
+    'client-request-id': 'REDACTED'
+    'x-client-current-telemetry': 'REDACTED'
+    'x-client-last-telemetry': 'REDACTED'
+    'User-Agent': 'azsdk-python-identity/1.12.0 Python/3.8.2 (Windows-10-10.0.22621-SP0)'
+A body is sent with the request
+2023-12-03 20:14:37,632 connectionpool.py:456 DEBUG MainThread https://login.microsoftonline.com:443 "POST /e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/token HTTP/1.1" 200 1463
+2023-12-03 20:14:37,633 _universal.py:575 INFO MainThread Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'P3P': 'REDACTED'
+    'client-request-id': 'REDACTED'
+    'x-ms-request-id': 'f5d8d60b-db00-49dc-8e18-5fc926d60d00'
+    'x-ms-ests-server': 'REDACTED'
+    'x-ms-clitelem': 'REDACTED'
+    'X-XSS-Protection': 'REDACTED'
+    'Set-Cookie': 'REDACTED'
+    'Date': 'Sun, 03 Dec 2023 14:44:38 GMT'
+    'Content-Length': '1463'
+2023-12-03 20:14:37,634 token_cache.py:123 DEBUG MainThread event={
+    "client_id": "53576ce9-8e12-419f-a816-694c986f73e2",
+    "data": {
+        "claims": "{\"access_token\": {\"xms_cc\": {\"values\": [\"CP1\"]}}}",
+        "scope": [
+            "https://management.azure.com/.default"
+        ]
+    },
+    "environment": "login.microsoftonline.com",
+    "grant_type": "client_credentials",
+    "params": null,
+    "response": {
+        "access_token": "********",
+        "expires_in": 3599,
+        "ext_expires_in": 3599,
+        "token_type": "Bearer"
+    },
+    "scope": [
+        "https://management.azure.com/.default"
+    ],
+    "token_endpoint": "https://login.microsoftonline.com/e5953a31-070b-464b-85b4-5bee974b5ede/oauth2/v2.0/token"
+}
+2023-12-03 20:14:37,634 get_token_mixin.py:77 INFO MainThread ClientSecretCredential.get_token succeeded
+2023-12-03 20:14:37,634 _universal.py:537 INFO MainThread Request URL: 'https://management.azure.com/subscriptions/05710e7b-e735-4937-8011-7962d3dccafe/providers/Microsoft.Compute/disks?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '7b348fd6-91ea-11ee-951b-90e868f27420'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/29.1.0 Python/3.8.2 (Windows-10-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2023-12-03 20:14:37,636 connectionpool.py:1003 DEBUG MainThread Starting new HTTPS connection (1): management.azure.com:443
+2023-12-03 20:14:38,691 connectionpool.py:456 DEBUG MainThread https://management.azure.com:443 "GET /subscriptions/05710e7b-e735-4937-8011-7962d3dccafe/providers/Microsoft.Compute/disks?api-version=2022-07-02 HTTP/1.1" 200 3183
+2023-12-03 20:14:38,692 _universal.py:575 INFO MainThread Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '3183'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-served-by': 'REDACTED'
+    'x-ms-request-id': 'cd2362d0-ab37-4582-a0e2-16bda8bc0105'
+    'x-ms-ratelimit-remaining-subscription-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Sun, 03 Dec 2023 14:44:39 GMT'
+2023-12-03 20:14:38,699 service.py:47 INFO MainThread The resource is 261.4375277877778 hours old and older than the threshold of 60.0 hours.
+2023-12-03 20:14:38,700 service.py:47 INFO MainThread The resource is 261.43177735694445 hours old and older than the threshold of 60.0 hours.
+2023-12-03 20:14:38,700 disk.py:127 WARNING MainThread List of Azure Disks (Total: 0) which will be deleted: []
