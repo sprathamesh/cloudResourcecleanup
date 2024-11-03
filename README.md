@@ -23,4 +23,4 @@ To interact with various cloud providers, the following Python packages are requ
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yugabyte/cloud-resource-cleanup.git
+   git clone https://github.com/sprathamesh/cloudResourcecleanup.git
